@@ -31,23 +31,24 @@
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="405dp"
+                    android:layout_height="136dp"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="@+id/imageView"
                     app:layout_constraintTop_toBottomOf="@+id/imageView"
-                    app:srcCompat="@drawable/profile" />
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/hello" />
 
                 <TextView
                     android:id="@+id/profileName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/no_name"
+                    android:text="Abinaya"
                     android:layout_marginTop="16dp"
                     android:textSize="25sp"
                     android:textStyle="bold"
-
                     app:layout_constraintEnd_toEndOf="@+id/imageView2"
                     app:layout_constraintStart_toStartOf="@+id/imageView2"
                     app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -56,7 +57,7 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="lionfischer@gmail.com"
+                    android:text="akshaya@ail.com"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="@+id/profileName"
                     app:layout_constraintStart_toStartOf="@+id/profileName"
@@ -105,15 +106,14 @@
                         android:paddingStart="20dp"
                         android:text="Persoanl Information"
                         android:textAlignment="viewStart" />
+
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/button4"
+                        style="@android:style/Widget.Button"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:layout_marginStart="32dp"
                         android:layout_marginTop="10dp"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        style="@android:style/Widget.Button"
                         android:layout_marginEnd="32dp"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/btn_background_1"
@@ -121,7 +121,9 @@
                         android:drawablePadding="20dp"
                         android:paddingStart="20dp"
                         android:text="Notification"
-                        android:textAlignment="viewStart" />
+                        android:textAlignment="viewStart"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         style="@android:style/Widget.Button"

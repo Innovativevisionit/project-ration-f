@@ -1,19 +1,18 @@
 package com.example.wastetowealth;
 
 import android.os.Bundle;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.wastetowealth.adapter.RecyclerAdapter;
+import com.example.wastetowealth.adapter.CardAdapter;
 import com.example.wastetowealth.model.DashboardCards;
 
 import java.util.ArrayList;
 
-public class DashboardActivity extends AppCompatActivity implements RecyclerAdapter.OnItemClickListener {
+public class DashboardActivity extends AppCompatActivity implements CardAdapter.OnItemClickListener {
     private ArrayList<DashboardCards> courseModelArrayList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +30,7 @@ public class DashboardActivity extends AppCompatActivity implements RecyclerAdap
         courseModelArrayList.add(new DashboardCards("Java for Android", "Cuddalore", R.drawable.purple));
         courseModelArrayList.add(new DashboardCards("HTML and CSS", "Cuddalore", R.drawable.purple));
 
-        RecyclerAdapter courseAdapter = new RecyclerAdapter(this, courseModelArrayList);
+        CardAdapter courseAdapter = new CardAdapter(this, courseModelArrayList);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         GridLayoutManager layoutManager = new GridLayoutManager(this, 2);

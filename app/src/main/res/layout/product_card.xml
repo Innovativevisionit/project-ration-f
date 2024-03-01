@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageStore"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/purple" />
+
+            <!-- Label and Value for Product Name -->
+            <TextView
+                android:id="@+id/productNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="4dp"
+                android:text="productName: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/productNameLabel"
+                android:layout_toEndOf="@id/productNameLabel"
+                android:text="Wheat" />
+
+            <!-- Label and Value for Total Kgs -->
+            <TextView
+                android:id="@+id/totalKgsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productNameLabel"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="10dp"
+                android:text="totalKgs: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalKgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/totalKgsLabel"
+                android:layout_toEndOf="@id/totalKgsLabel"
+                android:text="100Kgs" />
+
+            <!-- Label and Value for Available Kgs -->
+            <TextView
+                android:id="@+id/availKgsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/totalKgsLabel"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="10dp"
+                android:text="availKgs: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/availKgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/availKgsLabel"
+                android:layout_toEndOf="@id/availKgsLabel"
+                android:text="150kgs" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp">
+
+                <ImageView
+                    android:id="@+id/addProducts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginBottom="22dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/add" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -48,5 +48,4 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     compileOnly("org.projectlombok:lombok:1.18.30")
     annotationProcessor("org.projectlombok:lombok:1.18.30")
-    implementation ("com.google.android.material:material:1.2.1")
 }
