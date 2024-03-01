@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Waste To Wealth</string>
+    <string name="app_name">Ration Management</string>
     <string name="dashboard_item_2">Dashboard Item 2</string>
     <string name="dashboard_item_1">Dashboard Item 1</string>
     <string name="no_name">No Name</string>
@@ -12,4 +12,8 @@
     <string name="store_name">Store Name</string>
     <string name="location">Location</string>
     <string name="saved">Saved</string>
+
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+
 </resources>
