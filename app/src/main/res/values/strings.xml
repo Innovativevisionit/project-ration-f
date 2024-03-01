@@ -12,4 +12,6 @@
     <string name="store_name">Store Name</string>
     <string name="location">Location</string>
     <string name="saved">Saved</string>
+    <string name="don_t_have_a_account">Don\'t have a account</string>
+    <string name="logout">Logout</string>
 </resources>

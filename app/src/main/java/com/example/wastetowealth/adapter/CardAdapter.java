@@ -16,7 +16,7 @@ import com.example.wastetowealth.model.DashboardCards;
 
 import java.util.List;
 
-public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
+public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
     public interface OnItemClickListener {
         void onItemClick(int position);
     }
@@ -29,7 +29,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
     private final List<DashboardCards> dataList; // Replace YourModel with the actual model class
 
-    public RecyclerAdapter(DashboardActivity dashboardActivity, List<DashboardCards> dataList) {
+    public CardAdapter(DashboardActivity dashboardActivity, List<DashboardCards> dataList) {
         this.dataList = dataList;
     }
 

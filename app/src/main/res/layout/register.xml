@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/purple"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,9 +22,12 @@
         android:padding="28dp">
 
         <ImageView
-            android:layout_width="300dp"
-            android:layout_height="160dp"
-            android:src="@drawable/sign" />
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/log" />
+
+
+
 
     </LinearLayout>
 
@@ -39,13 +42,13 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="28dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Welcome"
+                android:text="Register"
                 android:textColor="@color/my_primary"
                 android:textSize="32sp"
                 android:textStyle="bold"/>
@@ -53,7 +56,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Please login with your information"
+                android:text="Please register with your information"
                 android:alpha="0.7"/>
 
             <View
@@ -62,14 +65,44 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email Address"
+                android:text="Name"
                 android:alpha="0.7"
                 android:textStyle="bold"/>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/email"
+                android:inputType="textPersonName" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:alpha="0.7"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:alpha="0.7"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:inputType="textEmailAddress" />
 
             <View
@@ -85,10 +118,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/password"
                 android:inputType="textPassword" />
-
-
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="10dp"/>
@@ -96,9 +126,8 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="Login"
-                android:id="@+id/loginSubmit"
-                app:cornerRadius="32dp"/>
+                android:text="Register"
+                app:cornerRadius="32dp" />
 
             <View
                 android:layout_width="wrap_content"
@@ -111,25 +140,23 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/don_t_have_a_account"
+                    android:text="Already Registered"
                     android:layout_gravity="center"
                     android:alpha="0.7"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/registerNow"
-                    android:text=" register now"
+                    android:text=" login"
+                    android:id="@+id/login"
                     android:layout_gravity="center"
                     android:textColor="@color/my_primary"
                     android:alpha="0.9"/>
             </LinearLayout>
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="20dp"/>
+                android:layout_height="10dp"/>
 
         </LinearLayout>
 
-
     </androidx.cardview.widget.CardView>
-
 </RelativeLayout>
